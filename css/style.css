@@ -196,7 +196,7 @@ h6,
     bottom: 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%);
+    /*background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%);*/
     z-index: 1;
 }
 
@@ -419,7 +419,6 @@ h6,
     height: 100%;
     top: 100%;
     left: 0;
-    display: flex;
     align-items: center;
     text-align: center;
     background: rgba(2, 36, 91, .7);
