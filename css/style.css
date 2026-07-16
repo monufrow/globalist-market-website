@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF5E14;
-    --secondary: #5F656F;
+    --primary: #E22627;
+    --secondary: #74BB44;
     --light: #F5F5F5;
     --dark: #02245B;
 }
@@ -229,7 +229,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/Globalist-Market-Logo-Large.jpg) center center no-repeat;
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/Globalist-Market-Logo-Large-Transparent.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -555,7 +555,7 @@ h6,
 }
 
 
-/*** Team ***/
+/*** Team 
 .team-item .team-social {
     position: absolute;
     width: 100%;
@@ -570,7 +570,7 @@ h6,
 
 .team-item:hover .team-social {
     left: 0;
-}
+}***/
 
 
 /*** Testimonial ***/
