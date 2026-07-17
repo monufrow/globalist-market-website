@@ -229,8 +229,8 @@ h6,
 }
 
 .page-header {
-    /*background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/Globalist-Market-Logo-Large-Transparent.png) center center no-repeat;
-    */background-size: cover;
+    background: url(../img/Globalist-Market-Logo-Large-Transparent.png) center center no-repeat;
+    background-size: cover;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {

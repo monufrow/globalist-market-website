@@ -133,6 +133,10 @@ Hover → darker green
 .paragraph{
     margin-bottom:15px;
 }
+.hero-logo{
+    object-fit:contain;
+    background:white;
+}
 
 /* From style.css 
     For Header
@@ -165,14 +169,17 @@ Hover → darker green
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        height:700px;/*min-height: 450px;*/
     }
     
     #header-carousel .carousel-item img {
-        position: absolute;
+        /*position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: cover;*/
+        width:100%;
+        height:100%;
+        object-fit:cover;
     }
 }
 
