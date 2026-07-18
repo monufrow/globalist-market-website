@@ -55,8 +55,10 @@ Hover → darker green
 .btn-gm {
     background-color: var(--gm-green);
     color: white;
-    border-radius: 20px; /* rounded corners */
+    border-radius: 50px; /* rounded corners */
     outline: none;
+    padding:16px 42px;
+
 }
 
 .btn-gm:hover {
@@ -106,10 +108,12 @@ Hover → darker green
     object-fit:cover;
 
 }
+.hero-logo{
+    object-fit:contain;
+    background:white;
+}
 .hero-title{
     color: var(--gm-dark);
-    text-shadow:
-        2px 2px 6px rgba(0,0,0,.8);
 }
 
 .section-divider{
@@ -132,10 +136,6 @@ Hover → darker green
 }
 .paragraph{
     margin-bottom:15px;
-}
-.hero-logo{
-    object-fit:contain;
-    background:white;
 }
 
 /* From style.css 
