@@ -44,6 +44,8 @@ CONTACT
 
 GENERAL
 
+☐ Resize all images
+
 ☐ Footer
 
 ☐ Mobile review

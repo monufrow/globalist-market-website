@@ -52,10 +52,10 @@ Hover → darker green
     font-weight: 700;
 }
 
-.btn-gm {
+/*.btn-gm {
     background-color: var(--gm-green);
     color: white;
-    border-radius: 50px; /* rounded corners */
+    border-radius: 50px; // rounded corners 
     outline: none;
     padding:16px 42px;
 
@@ -63,9 +63,21 @@ Hover → darker green
 
 .btn-gm:hover {
     background-color: #5da334;
-    transform: translateY(-2px); /* lift up 2px on hover */
+    transform: translateY(-2px); // lift up 2px on hover 
+}*/
+.btn-gm {
+    background: white;
+    color: var(--gm-green);
+    border: 2px solid var(--gm-green);
+    border-radius: 10px;
+    transition: all .25s ease;
 }
 
+.btn-gm:hover {
+    background: var(--gm-green);
+    color: white;
+}
+    
 .btn-secondary {
     background-color: white;
     color: var(--gm-green);
@@ -196,4 +208,110 @@ Hover → darker green
 .page-header .breadcrumb-item a {
     font-size: 18px;
     color: var(--light);
+}
+
+/*** Service ***/
+.service-item {
+    position: relative;
+    margin: 65px 0 25px 0;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.service-item .service-img {
+    position: absolute;
+    padding: 12px;
+    width: 130px;
+    height: 130px;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .09);
+    z-index: 2;
+}
+
+.service-item .service-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.service-item .service-title {
+    position: absolute;
+    padding: 65px 30px 25px 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #FFFFFF;
+    transition: .5s;
+}
+
+.service-item:hover .service-title {
+    top: -100%;
+}
+
+.service-item .service-text {
+    position: absolute;
+    overflow: hidden;
+    padding: 65px 30px 25px 30px;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    background: rgba(2, 36, 91, .7);
+    transition: .5s;
+}
+
+.service-item:hover .service-text {
+    top: 0;
+}
+
+.service-item .service-text::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100px;
+    top: -100%;
+    left: 0;
+    transform: skewY(-12deg);
+    background: #FFFFFF;
+    transition: .5s;
+}
+
+.service-item:hover .service-text::before {
+    top: -55px;
+}
+
+.service-item .btn {
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .09);
+    z-index: 2;
+}
+
+.service-item .btn:hover {
+    color: #FFFFFF;
+    background: var(--primary);
 }
