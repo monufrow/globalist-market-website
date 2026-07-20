@@ -52,6 +52,10 @@ Hover → darker green
     font-weight: 700;
 }
 
+.bg-primary {
+    background-color: var(--gm-green) !important;
+}
+
 /*.btn-gm {
     background-color: var(--gm-green);
     color: white;
