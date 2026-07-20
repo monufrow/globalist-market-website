@@ -56,6 +56,13 @@ Hover → darker green
     background-color: var(--gm-green) !important;
 }
 
+.text-primary {
+    color: var(--gm-red) !important;
+}
+.green {
+    color: var(--gm-green) !important;
+}
+
 /*.btn-gm {
     background-color: var(--gm-green);
     color: white;
@@ -323,10 +330,7 @@ Hover → darker green
     justify-content: center;
     color: var(--gm-green);
     background: #FFFFFF;
-    border: 2px solid var(--gm-dark);
-    border-radius: 10px;
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
-    transition: all .25s ease;
     z-index: 2;
 }
 
