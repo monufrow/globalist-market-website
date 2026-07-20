@@ -72,7 +72,7 @@ Hover → darker green
 .btn-gm {
     background: white;
     color: var(--gm-green);
-    border: 2px solid var(--gm-green);
+    border: 2px solid var(--gm-dark);
     border-radius: 10px;
     transition: all .25s ease;
 }
@@ -179,10 +179,23 @@ Hover → darker green
     border: 15px solid var(--primary);
     border-radius: 3.5rem;
 }
-#header-carousel .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+#header-carousel{
+    height:700px;
+}
+
+#header-carousel .carousel-inner{
+    height:100%;
+}
+
+#header-carousel .carousel-item{
+    height:100%;
+}
+
+#header-carousel .carousel-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 @media (max-width: 768px) {
@@ -308,10 +321,12 @@ Hover → darker green
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--secondary);
+    color: var(--gm-green);
     background: #FFFFFF;
-    border: none;
+    border: 2px solid var(--gm-dark);
+    border-radius: 10px;
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
+    transition: all .25s ease;
     z-index: 2;
 }
 
