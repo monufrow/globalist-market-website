@@ -2,9 +2,9 @@ HOME
 
 ☑ Fix hero overlay
 
-☐ Make logo fit hero
+☑ Make logo fit hero
 
-☐ Remove top contact bar
+☑ Remove top contact bar
 
 ☑ Add second slide
 
