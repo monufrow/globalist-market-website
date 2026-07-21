@@ -31,6 +31,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -77,70 +78,71 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- Form Start 
-    <form action="contact.php" method="POST">  
-        Name
-
-        Email
-
-        Phone
-
-        Subject
-
-        Message
-
-        Submit
-    </form>-->
-
-    <!-- Form End -->
-
     <!-- template form start-->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="fw-medium text-uppercase text-primary mb-2">Contact Us</p>
-                    <h1 class="display-5 mb-4">If You Have Any Queries, Please Feel Free To Contact Us</h1>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form
-                        with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
-                        done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    <h1 class="display-5 mb-4">Get in Touch</h1>
+                        <p>We'd be happy to discuss material availability, pricing, shipping, or answer any questions about our products. 
+                        Complete the form below and we'll get back to you as soon as possible.</p>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form action="contact.php" method="POST">
                         <div class="row g-3">
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+                                    <input type="text" class="form-control" id="company" name="company" placeholder="Company Name">
+                                    <label for="company">Company Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone">
                                     <label for="phone">Your Phone</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                    <label for="subject">Product of Interest</label>
+                                    <select id="subject" name="subject" placeholder="General Inquiry">
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="LDPE">LDPE</option>
+                                        <option value="HDPE">HDPE</option>
+                                        <option value="LLDPE">LLDPE</option>
+                                        <option value="Polyethylene Wax">Polyethylene Wax</option>
+                                        <option value="Propylene">Propylene</option>
+                                        <option value="POE">POE</option>
+                                        <option value="PCR">PCR</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" required
                                         style="height: 150px"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                            <div style="display:none;">
+                                <input type="text" name="website">
                             </div>
                         </div>
                     </form>
@@ -149,7 +151,6 @@
         </div>
     </div>
     <!-- template form end -->
-
 
     <!-- Contact Start -->
     <div class="row g-5 justify-content-center mb-5">
