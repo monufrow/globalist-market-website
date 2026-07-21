@@ -159,6 +159,21 @@ Hover → darker green
     margin-bottom:15px;
 }
 
+.team-photo {
+    width: 220px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.team-list {
+    padding-left: 1.25rem;
+}
+
+.team-list li {
+    margin-bottom: 1rem;
+}
+
 /* From style.css 
     For Header
 */
