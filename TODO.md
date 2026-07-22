@@ -16,9 +16,9 @@ ABOUT
 
 ☑ Wendy portrait
 
-☐ Fix Wendy text
+☑ Fix Wendy text
 
-    ☐ Add founder timeline
+    ☐ Clean bulleted list formatting to look nicer
 
 PRODUCTS
 
@@ -35,6 +35,10 @@ FAQ
 ☑ Structure
 
 ☑ Accordion animation
+
+☐ Fix formatting so the questions/answers are clearly different parts
+
+☐ Fix hero text overlaying the logo, move it down a bit
 
 CONTACT
 
