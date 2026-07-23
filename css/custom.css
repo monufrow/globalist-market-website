@@ -254,7 +254,7 @@ Hover → darker green
     position: relative;
     margin: 65px 0 25px 0;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
-    min-height:400px;
+    min-height:300px;
 }
 
 .service-item > img{
@@ -387,4 +387,38 @@ Hover → darker green
 
 .product-list li:last-child{
     margin-bottom:0;
+}
+
+.accordion-button{
+    font-weight:600;
+    color:var(--gm-dark);
+    background:white;
+}
+
+.accordion-button:not(.collapsed){
+    color:white;
+    background:var(--gm-green);
+}
+
+.accordion-body{
+    padding:25px 30px;
+    line-height:1.7;
+    color:#555;
+}
+
+.accordion-item{
+    border:none;
+    border-radius:12px !important;
+    overflow:hidden;
+    margin-bottom:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+    border:none;
+}
+
+.accordion-button::after{
+    filter:grayscale(100%);
 }

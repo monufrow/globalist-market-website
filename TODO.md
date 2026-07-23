@@ -8,7 +8,7 @@ HOME
 
 ☑ Add second slide
 
-☐ Fix card text placement
+☑ Fix card text placement
 
 ABOUT
 
@@ -18,17 +18,17 @@ ABOUT
 
 ☑ Fix Wendy text
 
-    ☐ Clean bulleted list formatting to look nicer
+    ☐~☑ Clean bulleted list formatting to look nicer
 
 PRODUCTS
 
 ☑ Bullet lists
 
-☐ Equal card heights
+☑ Equal card heights
 
 ☐ Replace placeholder images
 
-☐ Fix card text placement
+☑ Fix card text placement
 
 FAQ
 
