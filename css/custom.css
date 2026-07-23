@@ -374,6 +374,7 @@ Hover → darker green
 }
 
 .product-list li{
+    color:white;
     margin-bottom:12px;
     line-height:1.45;
 }
