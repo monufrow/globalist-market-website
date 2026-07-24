@@ -36,13 +36,13 @@ FAQ
 
 ☑ Accordion animation
 
-☐ Fix formatting so the questions/answers are clearly different parts
+☑ Fix formatting so the questions/answers are clearly different parts
 
-☐ Fix hero text overlaying the logo, move it down a bit
+☑ Fix hero text overlaying the logo, move it down a bit
 
 CONTACT
 
-☐ Build form
+☑ Build form
 
 ☐ Success message
 
@@ -63,3 +63,8 @@ GENERAL
 ☐ Favicon
 
 ☐ Update 404 error page
+
+EMAIL
+
+☐ change photos on home page
+☐ change about/meet the team section
