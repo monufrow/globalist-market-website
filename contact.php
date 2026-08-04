@@ -67,7 +67,7 @@ try {
 
     $mail->setFrom('info@globalistmarket.com', 'Globalist Market Website'); //email to be sent from
 
-    $mail->addAddress('monufrow@trinity.edu'); //email to send to
+    $mail->addAddress('wendy@globalistmarket.com'); //email to send to
 
     $mail->addReplyTo($email, $name); //gives the proper email/name for replying to the email
         
