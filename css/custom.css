@@ -249,6 +249,13 @@ Hover → darker green
     color: var(--light);
 }
 
+.temp-product-card {
+    border-radius: 12px;
+    padding: 30px;
+    transition: 0.3s;
+    background-color: var(--gm-light);
+}
+
 /*** Service ***/
 .service-item {
     position: relative;

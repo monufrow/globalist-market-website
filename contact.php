@@ -1,4 +1,14 @@
-<?php// Structure
+<?php
+require 'config.php';
+
+require 'PHPMailer-master/src/Exception.php';
+require 'PHPMailer-master/src/PHPMailer.php';
+require 'PHPMailer-master/src/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Structure
 // 1. Only accept POST requests
 
 // 2. Read the form values
@@ -12,11 +22,10 @@
 // 6. Send email with PHPMailer
 
 // 7. Redirect user
-?>
-
-<?php
 
 // Only allow POST requests
+$mail = new PHPMailer(true);
+
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
     die("Invalid request.");
 }
@@ -44,18 +53,57 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     die("Invalid email address.");
 }
 
-// Temporary output for testing
-echo "<h2>Form Submitted Successfully!</h2>";
+//real forwarding
+try {
+    $mail->isSMTP();
+    $mail->Host = SMTP_HOST;
+    $mail->SMTPAuth = true;
+    $mail->Username = SMTP_USER;
+    $mail->Password = SMTP_PASS;
+    $mail->SMTPSecure = SMTP_ENCRYPTION;
+    $mail->Port = SMTP_PORT;
+    $mail->Timeout = 20;
+    $mail->CharSet = 'UTF-8';
 
-echo "<strong>Name:</strong> $name <br>";
-echo "<strong>Email:</strong> $email <br>";
-echo "<strong>Company:</strong> $company <br>";
-echo "<strong>Phone:</strong> $phone <br>";
-echo "<strong>Subject:</strong> $subject <br>";
-echo "<strong>Message:</strong><br>";
-echo nl2br(htmlspecialchars($message));
-//$mail = new PHPMailer(true);
-// ...
-//$mail->send();
+    $mail->setFrom('info@globalistmarket.com', 'Globalist Market Website'); //email to be sent from
 
-?>
+    $mail->addAddress('monufrow@trinity.edu'); //email to send to
+
+    $mail->addReplyTo($email, $name); //gives the proper email/name for replying to the email
+        
+    $mail->Subject = "Website Contact: " . ($subject ?: "General Inquiry"); //email subject
+
+    $mail->isHTML(true);
+    
+    $message = htmlspecialchars($message);
+    $name = htmlspecialchars($name);
+    $company = htmlspecialchars($company);
+    $phone = htmlspecialchars($phone);
+    $subject = htmlspecialchars($subject);
+    $email = htmlspecialchars($email);
+
+    $mail->Body = "
+        <h2>New Website Inquiry</h2>
+        <p><strong>Name:</strong> $name</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Company:</strong> $company</p>
+        <p><strong>Phone:</strong> $phone</p>
+        <p><strong>Subject:</strong> $subject</p>
+        <hr>
+        <p>$message</p>";
+
+    $mail->AltBody = "Name: $name\nEmail: $email\n\n$message";
+
+    $mail->send();
+
+    header("Location: contact.html?success=1");
+    exit();
+}
+catch (Exception $e) {
+    header("Location: contact.html?error=1");
+    exit();
+}
+
+// Redirect 
+
+//end of file
