@@ -225,6 +225,9 @@
                 Please try again later.
             </div>`;
     }
+    if (params.has("success") || params.has("error")) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
     </script>
 </body>
 

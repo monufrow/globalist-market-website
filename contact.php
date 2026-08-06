@@ -24,6 +24,7 @@ use PHPMailer\PHPMailer\Exception;
 // 7. Redirect user
 
 // Only allow POST requests
+
 $mail = new PHPMailer(true);
 
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
@@ -67,7 +68,7 @@ try {
 
     $mail->setFrom('info@globalistmarket.com', 'Globalist Market Website'); //email to be sent from
 
-    $mail->addAddress('wendy@globalistmarket.com'); //email to send to
+    $mail->addAddress('wendy@globalistmarket.com'); //email to send to 
 
     $mail->addReplyTo($email, $name); //gives the proper email/name for replying to the email
         
@@ -95,12 +96,21 @@ try {
     $mail->AltBody = "Name: $name\nEmail: $email\n\n$message";
 
     $mail->send();
+    
 
     header("Location: contact.html?success=1");
+    
     exit();
 }
 catch (Exception $e) {
-    header("Location: contact.html?error=1");
+
+    echo "<h2>Mail Error</h2>";
+    echo "<pre>";
+    echo $mail->ErrorInfo;
+    echo "\n\n";
+    echo $e->getMessage();
+    echo "</pre>";
+
     exit();
 }
 
