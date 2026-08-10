@@ -1,0 +1,11 @@
+We should explicitly test:
+large desktop
+normal laptop
+tablet
+mobile
+
+And not just ask whether it technically works.
+
+Ask:
+
+Does the layout look intentional at each breakpoint?

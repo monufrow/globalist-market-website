@@ -1,0 +1,7 @@
+This file is made to centralize design decisions for this project
+
+The entire site needs to feel continuous and a part of the same site
+
+Whatever font, header sizes, etc should be the same throughout the site, 
+    this file explains what those standards are.
+
