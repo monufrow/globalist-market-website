@@ -1,56 +1,6 @@
-HOME
-
-☑ Fix hero overlay
-
-☑ Make logo fit hero
-
-☑ Remove top contact bar
-
-☑ Add second slide
-
-☑ Fix card text placement
-
-ABOUT
-
-☑ Mission cards
-
-☑ Wendy portrait
-
-☑ Fix Wendy text
-
-    ☐~☑ Clean bulleted list formatting to look nicer
-
-PRODUCTS
-
-☑ Bullet lists
-
-☑ Equal card heights
-
-☐ Replace placeholder images
-
-☑ Fix card text placement
-
-FAQ
-
-☑ Structure
-
-☑ Accordion animation
-
-☑ Fix formatting so the questions/answers are clearly different parts
-
-☑ Fix hero text overlaying the logo, move it down a bit
-
-CONTACT
-
-☑ Build form
-
-☐ Success message
-
 GENERAL
 
 ☐ Resize all images
-
-☐ Footer
 
 ☐ Mobile review
 
@@ -64,7 +14,76 @@ GENERAL
 
 ☐ Update 404 error page
 
-EMAIL
+RESPONSIVE DESIGN
 
-☐ change photos on home page
-☐ change about/meet the team section
+☐ large desktop
+
+☐ normal laptop
+
+☐ tablet
+
+☐ mobile
+
+Accessibility
+
+☐ semantic HTML
+☐ heading hierarchy
+☐ alt text
+☐ keyboard navigation
+☐ focus states
+☐ sufficient contrast
+☐ form labels
+☐ button/link semantics
+☐ accessible navigation
+☐ image sizing
+☐ screen-reader considerations
+
+Performance 
+Things I'd want to inspect:
+    image sizes
+    image formats
+    lazy loading
+    unnecessary JavaScript
+    CSS
+    page load performance
+    Lighthouse results
+    mobile performance
+
+SEO / metadata
+Depending on the nature of Globalist Market, we should examine:
+    page titles
+    meta descriptions
+    Open Graph metadata
+    canonical URLs
+    sitemap
+    robots.txt
+    semantic structure
+    meaningful URLs
+This gives us legitimate professional-development material.
+
+CODE CLEAENING
+☐ 
+
+README
+☐ Make one
+For your strongest projects, we should make the repositories look intentional.
+
+For Globalist Market:
+
+README
+
+I'd want something like:
+
+Globalist Market
+
+Short one-sentence description.
+
+Then:
+Overview- What the project is and what problem it solves.
+Features- Actual features.
+Technology- Actual stack.
+Architecture- A concise explanation of how the project is organized.
+Development- Interesting engineering decisions.
+Deployment- Where it's deployed.
+Screenshots- A few excellent screenshots.
+Future Improvements- Only if useful.
