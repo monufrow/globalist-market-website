@@ -8,23 +8,6 @@ require 'PHPMailer-master/src/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Structure
-// 1. Only accept POST requests
-
-// 2. Read the form values
-
-// 3. Validate required fields
-
-// 4. Stop spam
-
-// 5. Create email
-
-// 6. Send email with PHPMailer
-
-// 7. Redirect user
-
-// Only allow POST requests
-
 $mail = new PHPMailer(true);
 
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
@@ -54,7 +37,6 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     die("Invalid email address.");
 }
 
-//real forwarding
 try {
     $mail->isSMTP();
     $mail->Host = SMTP_HOST;
